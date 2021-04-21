@@ -31,6 +31,7 @@
 
 Neste NLW#5 iremos desenvolver um web site para podcaster com o React, onde faremos uso das funcionalidade de Static Site Generation, através das ferramentas do nextjs, das Contexts API do React e da integração com Elementos Nativos do HTML.
 
+Se você quer acompanhar as minhas anotações diárias sobre o projeto, com o passo a passo do que foi feito nele, acesse [NLW Personal Notes](https://www.notion.so/Next-Level-Week-5-1-Dia-d4487ff53f0f4130b9077d1a5deaecfe) e me acompanhe nas redes sociais Twitter e Linkedin(links no final da página).
 <br>
 <br>
 
@@ -101,6 +102,9 @@ Foram utilizadas as seguintes ferramentes no desenvolvimento do projeto:
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [React](https://pt-br.reactjs.org/)
 - [Next.js](https://nextjs.org/)
+- [Sass](https://sass-lang.com/)
+- [Date-fns](https://date-fns.org/v2.21.1/docs/format)
+- [Json-Server](https://github.com/typicode/json-server)
 
 <br>
 <br>
