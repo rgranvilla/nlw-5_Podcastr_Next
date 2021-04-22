@@ -53,10 +53,10 @@ Se você quer acompanhar as minhas anotações diárias sobre o projeto, com o p
 
 <br>
 
-- [ ] Listar todos os episódios
-- [ ] Listar os dois últimos lançamentos
+- [x] Listar todos os episódios
+- [x] Listar os dois últimos lançamentos
 - [ ] Criar um player para executar o podcast
-- [ ] Criar uma página de conteúdo para cada podcast
+- [x] Criar uma página de conteúdo para cada podcast
 
 <br>
 
@@ -105,6 +105,11 @@ Foram utilizadas as seguintes ferramentes no desenvolvimento do projeto:
 - [Sass](https://sass-lang.com/)
 - [Date-fns](https://date-fns.org/v2.21.1/docs/format)
 - [Json-Server](https://github.com/typicode/json-server)
+
+<br>
+
+- Server-side Rendering
+- Static Site Generations
 
 <br>
 <br>
