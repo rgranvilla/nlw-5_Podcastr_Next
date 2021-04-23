@@ -99,7 +99,7 @@ Se você quer acompanhar as minhas anotações diárias sobre o projeto, com o p
 
 Foram utilizadas as seguintes ferramentes no desenvolvimento do projeto:
 
-- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [TypeScript](https://www.typescriptlang.org/)
 - [React](https://pt-br.reactjs.org/)
 - [Next.js](https://nextjs.org/)
 - [Sass](https://sass-lang.com/)
