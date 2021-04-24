@@ -23,9 +23,10 @@ type PlayerContextData = {
   togglePlay: () => void;
   toggleLoop: () => void;
   toggleShuffle: () => void;
+  clearPlayerState: () => void;
   hasNext: boolean;
   hasPrevious: boolean;
-  hasPreviousShuffleList: boolean;
+  hasPreviousOnShuffleList: boolean;
 };
 
 export const PlayerContext = createContext({} as PlayerContextData);

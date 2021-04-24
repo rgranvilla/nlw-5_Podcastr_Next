@@ -54,9 +54,15 @@ export function PlayerContextProvider({
     setIsPlaying(state);
   }
 
+  function clearPlayerState() {
+    setEpisodeList([]);
+    setCurrentEpisodeIndex(0);
+    setShuffleList([]);
+  }
+
   const hasPrevious = currentEpisodeIndex > 0;
-  const hasPreviousShuffleList = shuffleList.length >= 1;
-  const hasNext = currentEpisodeIndex + 1 < episodeList.length;
+  const hasPreviousOnShuffleList = shuffleList.length >= 1;
+  const hasNext = isShuffling || currentEpisodeIndex + 1 < episodeList.length;
 
   function playNext() {
     if (isShuffling) {
@@ -76,7 +82,7 @@ export function PlayerContextProvider({
   }
 
   function playPrevious() {
-    if (isShuffling || hasPreviousShuffleList) {
+    if (isShuffling || hasPreviousOnShuffleList) {
       setCurrentEpisodeIndex(shuffleList[shuffleList.length - 1]);
       setShuffleList(shuffleList.slice(0, shuffleList.length - 1));
     } else if (hasPrevious) {
@@ -90,6 +96,7 @@ export function PlayerContextProvider({
         episodeList,
         shuffleList,
         currentEpisodeIndex,
+        clearPlayerState,
         play,
         playList,
         playNext,
@@ -103,7 +110,7 @@ export function PlayerContextProvider({
         setPlayingState,
         hasNext,
         hasPrevious,
-        hasPreviousShuffleList,
+        hasPreviousOnShuffleList,
       }}
     >
       {children}
