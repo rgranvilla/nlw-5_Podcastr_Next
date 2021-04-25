@@ -7,7 +7,7 @@
     "build_dev": "rm -rf .next && next build && next start",
     "build": "next build",
     "start": "next start",
-    "server": "json-server server.json -w -d 10 -p 3333 "
+    "server": "json-server db.json -w -d 10 -p 3333 "
   },
   "dependencies": {
     "axios": "^0.21.1",
