@@ -1,9 +1,9 @@
 [build]
-  command = "npm run build"
+  command: "npm run build"
   commandOrigin: config
-  publish = ""
+  publish: ""
 
 [[plugins]]
   inputs: {}
   origin: config
-  package = "@netlify/plugin-nextjs"
+  package: "@netlify/plugin-nextjs"
