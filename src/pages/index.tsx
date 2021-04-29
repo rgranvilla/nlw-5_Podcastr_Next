@@ -8,7 +8,7 @@ import { GetStaticProps } from 'next';
 import { api } from '../services/api';
 import { convertDurationToTimeString } from '../utils/convertDurationToTimeString';
 import { formatPublishedAt } from '../utils/formatPublishedAt';
-import { PlayerContext, usePlayer } from '../contexts/PlayerContext';
+import { usePlayer } from '../contexts/PlayerContext';
 
 import styles from '../styles/home.module.scss';
 

@@ -1,0 +1,52 @@
+/* oculta a caixa do checkbox */
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+/* transforma o label em uma barra */
+.label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 30px;
+  height: 6px;
+  background: var(--secondary-text-color);
+  float: right;
+  border-radius: 6px;
+  position: relative;
+}
+
+/* cria o botão de deslocamento */
+.label::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 14px;
+  height: 14px;
+  background-color: var(--green-500);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+/* muda a cor do background após mudar posição */
+.switch:checked + .label {
+  background-color: var(--secondary-text-color);
+}
+
+/* realiza o deslocamento do botão */
+.switch:checked + .label::after {
+  left: calc(100% + 3px);
+  transform: translateX(-100%);
+  background: var(--bg-player-panel);
+}
+
+.label:active:after {
+  width: 45px;
+}

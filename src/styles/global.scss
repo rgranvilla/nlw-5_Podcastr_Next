@@ -4,21 +4,26 @@
   box-sizing: border-box;
 }
 
-:root {
-  --white: #fff;
-
-  --gray-50: #f7f8fa;
-  --gray-100: #e6e8eb;
-  --gray-200: #afb2b1;
-  --gray-500: #888888;
-  --gray-800: #494d4b;
+html {
+  --background: #f7f8fa;
+  --bg-main: #888888;
+  --bg-header: #ffffff;
+  --bg-card-episode: #ffffff;
+  --bg-button: #9164fa;
+  --bg-player-panel: #8257e5;
+  --bg-disable-container-image: linear-gradient(
+    143.8deg,
+    rgba(145, 100, 250, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  --main-title-color: #494d4b;
+  --main-text-color: #888888;
+  --secondary-text-color: #afb2b1;
+  --player-text-color: #ffffff;
+  --border-color: #e6e8eb;
+  --border-player-container-color: #9f75ff;
 
   --green-500: #04d361;
-
-  --purple-300: #9f75ff;
-  --purple-400: #9164fa;
-  --purple-500: #8257e5;
-  --purple-800: #6f48c9;
 }
 
 //por padrão nos browsers o font-size é 16px, as regras abaixo nos ajudam a
@@ -37,7 +42,7 @@
 }
 
 body {
-  background: var(--gray-50);
+  background: var(--background);
 }
 
 body,
@@ -45,7 +50,7 @@ input,
 textarea,
 button {
   font: 500 1rem Inter, sans-serif;
-  color: var(--gray-500);
+  color: var(--bg-main);
 }
 
 h1,
@@ -56,7 +61,7 @@ h5,
 h6 {
   font-weight: 600;
   font-family: Lexend, sans-serif;
-  color: var(--gray-800);
+  color: var(--main-title-color);
 }
 
 h1 {

@@ -2,6 +2,7 @@ import format from 'date-fns/format';
 import ptBR from 'date-fns/locale/pt-BR';
 
 import styles from './styles.module.scss';
+import { ThemeSwitcher } from '../ThemeSwitcher';
 
 export function Header() {
   const currentDate = format(new Date(), 'EEEEEE, d MMMM', {
@@ -10,11 +11,18 @@ export function Header() {
 
   return (
     <header className={styles.headerContainer}>
-      <img src='/logo.svg' alt='Podcastr' />
+      <img src='logo_dark.svg' alt='Podcastr' />
 
       <p>O melhor para você ouvir, sempre</p>
 
-      <span>{currentDate}</span>
+      <div className={styles.leftStatus}>
+        <span>{currentDate}</span>
+        <div className={styles.switcher}>
+          <img src='light-side.svg' alt='Tema Light' />
+          <ThemeSwitcher />
+          <img src='dark-side.svg' alt='Tema Dark' />
+        </div>
+      </div>
     </header>
   );
 }
