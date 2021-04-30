@@ -7,11 +7,12 @@
 <br>
 
 <p align="center">
+
+  <img alt="GitHub language count" src="https://wakatime.com/badge/github/rgranvilla/01-github-explorer.svg">
+
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rgranvilla/nlw-5_Podcastr_Next">
   
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/rgranvilla/nlw-5_Podcastr_Next">
-
-  <img alt="GitHub License" src="https://img.shields.io/github/license/rgranvilla/nlw-5_Podcastr_Next">
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/rgranvilla/nlw-5_Podcastr_Next">
 
